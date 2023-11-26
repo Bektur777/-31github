@@ -48,7 +48,7 @@ public class NumberOfStep {
         int count = 0;
 
         while (num != 0) {
-            num = num % 2 == 0 ? num >> 1 : num - 1;
+            num = (num & 1) == 0 ? num >> 1 : num - 1;
             count++;
         }
         
